@@ -1,54 +1,187 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+.new {
+  background-color: #000;
+  height:100vh;
+  width:100vw;
+}
 
 .landing-image{
-  background-image: url(../img/bg22.png);
+  background-image: url(https://static.pexels.com/photos/315191/pexels-photo-315191.jpeg);
   background-size:cover;
   background-position: center;
   background-attachment:fixed;
   height: 100vh;
   display:flex;
-  justify-content: center;
   align-items: center;
-
-}
-
-.logo {
-  border-radius: 100%;
-}
-
-.bio-section {
-  border: 1px solid black;
-  height: 800px;
+  justify-content: center;
+  -webkit-animation: fadeInFromNone 1.5s ease-out;
+  -moz-animation: fadeInFromNone 1.5s ease-out;
+  -o-animation: fadeInFromNone 1.5s ease-out;
+    animation: fadeInFromNone 1.5s ease-out;
 }
 
 
-.name {
-  border-bottom: 1px solid blue;
-}
-.name h1 {
-  font-size: 70px;
-  font-family: 'Montserrat', cursive;
-}
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
 
-.felix {
-  letter-spacing: 10px;
-  color: #cd2b1f;
-  }
-
-  .backdrop {
-    border-right: 1px solid red;
-  }
+    1% {
+        opacity: 0;
+    }
 
 
+    80% {
+      opacity: .8;
+    }
 
-
-/* dog store section begins*/
-.dog-store-bg {
-  height:405px;
-}
-.side-containers {
-  height: 405px;
-  background-color: rgb(205, 43, 31);
+    100% {
+        opacity: 1;
+    }
 }
 
-/* dog store section ends*/
+@-moz-keyframes fadeInFromNone  {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 0;
+    }
+
+
+    80% {
+      opacity: .8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 0;
+    }
+
+
+    80% {
+      opacity: .8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeInFromNone  {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 0;
+    }
+
+
+    80% {
+      opacity: .8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*fade in effect ends*/
+
+.jumbotron {
+  padding: 50px;
+  background-color: rgba(51, 51, 51, 0.5);
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {background-color:rgba(5,5,9, 0.7); }
+  25%  {background-color:rgba(41,3,4,0.7); }
+  50%  {background-color:rgba(5,5,9, 0.7);}
+  75%  {background-color:rgba(41,3,4,0.7); }
+  100% {background-color:rgba(5,5,9, 0.7);}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {background-color:rgba(5,5,9, 0.5); }
+  25%  {background-color:rgba(41,3,4,0.7); }
+  50%  {background-color:rgba(5,5,9, 0.5);}
+  75%  {background-color:rgba(41,3,4,0.7); }
+  100% {background-color:rgba(5,5,9, 0.5);}
+}
+/*jumbotron color change ends */
+
+
+.jumbotron h1, p {
+  color: white;
+  text-align: center;
+}
+
+.jumbotron p {
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+h1  {
+  border-bottom: solid 3px blue;
+
+}
+
+
+ul  {
+  list-style: none;
+  color:white;
+  text-align: center;
+  padding:0px;
+  font-size: 20px;
+
+}
+
+
+a {
+  padding:10px;
+
+  color:white; ;
+  background-color:rgba(136,56,45,1);
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.btn-about {
+  margin-top:30px;
+  margin-bottom: 30px;
+}
+
+a:hover {
+     color:rgba(168,74,92,1);
+     text-shadow: 2px 2px 11px rgba(168,74,92,1);
+     transition: all 0.5s;
+     text-decoration: none;
+     border-right: 1px solid rgba(168,74,92,1);
+       border-left: 1px solid rgba(168,74,92,1);
+       border-top:  1px solid rgba(168,74,92,1);
+       border-bottom: 1px solid rgba(168,74,92,1);
+       padding: 20px;
+       background-color: #fff;
+}
