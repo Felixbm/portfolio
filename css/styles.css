@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
-.new {
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Oswald');
+body {
   background-color: #000;
-  height:100vh;
-  width:100vw;
 }
 
 .landing-image{
-  background-image: url(https://static.pexels.com/photos/315191/pexels-photo-315191.jpeg);
+  background-image: url(../img/glass-bg.jpeg);
   background-size:cover;
   background-position: center;
   background-attachment:fixed;
@@ -14,10 +12,10 @@
   display:flex;
   align-items: center;
   justify-content: center;
-  -webkit-animation: fadeInFromNone 1.5s ease-out;
-  -moz-animation: fadeInFromNone 1.5s ease-out;
-  -o-animation: fadeInFromNone 1.5s ease-out;
-    animation: fadeInFromNone 1.5s ease-out;
+  -webkit-animation: fadeInFromNone 1.6s ease-out;
+  -moz-animation: fadeInFromNone 1.6s ease-out;
+  -o-animation: fadeInFromNone 1.6s ease-out;
+    animation: fadeInFromNone 1.6s ease-out;
 }
 
 
@@ -25,12 +23,9 @@
     0% {
         opacity: 0;
     }
-
     1% {
         opacity: 0;
     }
-
-
     80% {
       opacity: .8;
     }
@@ -44,16 +39,12 @@
     0% {
         opacity: 0;
     }
-
     1% {
         opacity: 0;
     }
-
-
     80% {
       opacity: .8;
     }
-
     100% {
         opacity: 1;
     }
@@ -63,16 +54,12 @@
     0% {
         opacity: 0;
     }
-
     1% {
         opacity: 0;
     }
-
-
     80% {
       opacity: .8;
     }
-
     100% {
         opacity: 1;
     }
@@ -83,16 +70,12 @@
     0% {
         opacity: 0;
     }
-
     1% {
         opacity: 0;
     }
-
-
     80% {
       opacity: .8;
     }
-
     100% {
         opacity: 1;
     }
@@ -109,26 +92,26 @@
   -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
   -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
   animation-name: example;
-  animation-duration: 6s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
 }
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
-  0%   {background-color:rgba(5,5,9, 0.7); }
-  25%  {background-color:rgba(41,3,4,0.7); }
-  50%  {background-color:rgba(5,5,9, 0.7);}
-  75%  {background-color:rgba(41,3,4,0.7); }
-  100% {background-color:rgba(5,5,9, 0.7);}
+  0%   {background-color:rgba(0, 0, 0, 1); }
+  25%  {background-color:rgba(0, 0, 0, .4);}
+  50%  {background-color:rgba(0, 0, 0, 1);}
+  75%  {background-color:rgba(0, 0, 0, .4);}
+  100% {background-color:rgba(0, 0, 0, 1);}
 }
 
 /* Standard syntax */
 @keyframes example {
-  0%   {background-color:rgba(5,5,9, 0.5); }
-  25%  {background-color:rgba(41,3,4,0.7); }
-  50%  {background-color:rgba(5,5,9, 0.5);}
-  75%  {background-color:rgba(41,3,4,0.7); }
-  100% {background-color:rgba(5,5,9, 0.5);}
+  0%   {background-color:rgba(0, 0, 0, 1); }
+  25%  {background-color:rgba(0, 0, 0, .4); }
+  50%  {background-color:rgba(0, 0, 0, 1);}
+  75%  {background-color:rgba(0, 0, 0, .4);}
+  100% {background-color:rgba(0, 0, 0, 1);}
 }
 /*jumbotron color change ends */
 
@@ -143,27 +126,27 @@
   margin-bottom: 30px;
 }
 
-h1  {
-  border-bottom: solid 3px blue;
+.jumbotron h1 {
+  font-family:'Source Code Pro', monospace;
+  border-bottom: double 3px rgba(18,52,86,1) ;
+
 
 }
 
 
-ul  {
+.jumbotron ul  {
   list-style: none;
-  color:white;
   text-align: center;
   padding:0px;
   font-size: 20px;
-
+letter-spacing: 1px;
 }
 
 
-a {
+.jumbotron a {
   padding:10px;
-
-  color:white; ;
-  background-color:rgba(136,56,45,1);
+  color:rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.5);
   text-decoration: none;
   border-radius: 10px;
 }
@@ -173,15 +156,166 @@ a {
   margin-bottom: 30px;
 }
 
-a:hover {
-     color:rgba(168,74,92,1);
-     text-shadow: 2px 2px 11px rgba(168,74,92,1);
+.jumbotron a:hover {
+     color:rgba(255,255,255, 1);
+     text-shadow: 2px 2px 11px rgba(18,52,86,1);
      transition: all 0.5s;
      text-decoration: none;
-     border-right: 1px solid rgba(168,74,92,1);
-       border-left: 1px solid rgba(168,74,92,1);
-       border-top:  1px solid rgba(168,74,92,1);
-       border-bottom: 1px solid rgba(168,74,92,1);
-       padding: 20px;
-       background-color: #fff;
+     border: 2px solid rgba(255,255,255,1);
+     /*border-style: double;*/
+    padding: 18px;
+
+}
+
+.testing {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position:fixed;
+  right:0px;
+}
+
+
+
+/*Message page*/
+.message-section {
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-text {
+  font-family: 'Oswald', sans-serif;
+  /*font-family:'Source Code Pro', monospace;*/
+  letter-spacing: 1px;
+  /*font-size: 55px;*/
+  color:#fff;
+}
+
+@media (max-width: 405px) {
+  .message-text {
+    font-size: 27px
+  }
+}
+
+
+
+
+
+
+
+
+
+/*Message page ends*/
+
+
+
+
+
+
+
+ /*Portfolio section begins*/
+.portfolio-section {
+  background-color:  rgba(0,0,0,1) ;
+  padding: 0px;
+
+}
+
+.site-holder {
+  background-color: #f5f5f5;
+}
+
+.dog-page--bg {
+  height: 360px;
+  background-image: url(../img/dog-page.png);
+  background-size:cover;
+  overflow: hidden;
+}
+.corner-square {
+  height: 100px;
+  width: 100px;
+  background-color: #000000;
+  position: absolute;
+  transform: rotate(50deg);
+  left: -44px;
+  top: -64px;
+  overflow: hidden;
+}
+
+.restaurant-page--bg {
+  height: 360px;
+  background-image: url(../img/restaurant-bg.png);
+
+  background-size: cover;
+  overflow: hidden;
+}
+
+.restaurant-square {
+  height: 100px;
+  width: 100px;
+  background-color: #000000;
+  position: absolute;
+  transform: rotate(50deg);
+  right: -44px;
+  bottom: -64px;
+  overflow: hidden;
+}
+
+.middle-countainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text-container {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: double 3px rgba(18,52,86,1) ;
+  /*border-left: double 3px rgba(18,52,86,1) ;
+  border-right: double 3px rgba(18,52,86,1) ;*/
+  padding: 0px;
+}
+
+/*about section begins*/
+
+.about-section {
+    /*border: 1px solid red;*/
+  height: 100vh;
+  padding-top: 200px;
+    /*background-attachment:fixed;*/
+}
+
+.selfie {
+  background-image: url(../img/me.jpg);
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.about-text {
+  padding-bottom: 20px;
+  padding-left: 0px;
+}
+.about-text h1 {
+  color: #eabb87;
+  line-height: 8px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+
+}
+
+.about-text-one {
+  opacity: .7;
+}
+
+
+.about-text-two {
+  opacity: .5;
+}
+
+.about-text-three {
+  opacity: .3;
 }
