@@ -294,6 +294,10 @@ letter-spacing: 1px;
 }
 /*overlay effect begins*/
 
+.discriptions {
+  font-family: 'Oswald', sans-serif;
+}
+
 
 .overlay {
   position: absolute;
