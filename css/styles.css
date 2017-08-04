@@ -342,7 +342,7 @@ letter-spacing: 1px;
 }
 
 .selfie {
-  background-image: url(../img/me.JPG);
+  background-image: url(../img/me.jpg);
   height: 360px;
   background-size: cover;
   background-position: center;
