@@ -270,6 +270,7 @@ letter-spacing: 1px;
 .site-holder {
   background-color: #f5f5f5;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .dog-page--bg {
@@ -293,6 +294,10 @@ letter-spacing: 1px;
   margin-bottom: 10px;
 }
 /*overlay effect begins*/
+
+.discriptions {
+  font-family: 'Oswald', sans-serif;
+}
 
 
 .overlay {
@@ -338,7 +343,7 @@ letter-spacing: 1px;
 }
 
 .selfie {
-  background-image: url(../img/me.jpg);
+  background-image: url(../img/felix.jpg);
   height: 360px;
   background-size: cover;
   background-position: center;
