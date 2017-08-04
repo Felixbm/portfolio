@@ -463,8 +463,8 @@ letter-spacing: 1px;
 .contact-text {
   width: 600px;
   height: 500px;
-  border-left:  1px  solid blue;
-  border-bottom:  1px  solid blue;
+  border-left:  1px  solid darkcyan;
+  border-bottom:  1px  solid darkcyan;
   /*border: 1px solid red;*/
 }
 
