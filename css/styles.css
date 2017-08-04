@@ -27,26 +27,6 @@ body {
     border-bottom: 1px solid white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .landing-image{
   background-image: url(../img/glass-bg.jpeg);
   background-size:cover;
@@ -313,6 +293,7 @@ letter-spacing: 1px;
   background-color: rgb(243, 173, 46);
 }
 
+
  .overlay-effect:hover .overlay {
   opacity: 1;
 }
@@ -326,6 +307,18 @@ letter-spacing: 1px;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.link-tags {
+  text-decoration: none;
+  color: #000;
+}
+
+.link-tags:hover {
+  text-decoration: none;
+  color: #000;
+  opacity: .5;
+  border-bottom: 1px solid #000;
 }
 
 /* overlay effect ends*/
