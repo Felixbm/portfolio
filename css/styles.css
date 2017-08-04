@@ -270,6 +270,7 @@ letter-spacing: 1px;
 .site-holder {
   background-color: #f5f5f5;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .dog-page--bg {
