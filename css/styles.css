@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Oswald|Open+Sans+Condensed:300');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
 body {
   background-color: #000;
 }
@@ -191,13 +195,6 @@ letter-spacing: 1px;
 
 }
 
-.testing {
-  height: 100px;
-  width: 100px;
-  background-color: red;
-  position:fixed;
-  right:0px;
-}
 
 
 
@@ -214,7 +211,7 @@ letter-spacing: 1px;
   /* font-family:'Source Code Pro', monospace; */
   letter-spacing: 1px;
   font-size: 55px;
-  color: rgb(0, 139, 139);
+  color: #05b3b3;
   /* text-shadow: 2px 2px 19px #fff; */
 }
 
@@ -242,7 +239,6 @@ letter-spacing: 1px;
 
  /*Portfolio section begins*/
 .portfolio-section {
-  background-color:  rgba(0,0,0,1) ;
   padding: 0px;
   /*border: 1px solid red;*/
 
@@ -250,7 +246,7 @@ letter-spacing: 1px;
 
 .site-holder {
   background-color: #f5f5f5;
-  overflow: hidden;
+  overflow: scroll;
   border-radius: 10px;
 }
 
@@ -258,6 +254,7 @@ letter-spacing: 1px;
   height: 360px;
   background-image: url(../img/dog-page.png);
   background-size:cover;
+  border-right: 10px solid #000;
 
 }
 
@@ -265,9 +262,9 @@ letter-spacing: 1px;
 .restaurant-page--bg {
   height: 360px;
   background-image: url(../img/restaurant-bg.png);
-
   background-size: cover;
   overflow: hidden;
+  border-left: 10px solid #000;
 }
 
 .blog-bg {
@@ -275,20 +272,36 @@ letter-spacing: 1px;
   background-image: url(../img/bc1.png);
   background-size: cover;
   overflow: hidden;
+  border-right: 10px solid #000;
 }
 
 
 
 .middle-countainer {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 /*overlay effect begins*/
 
 .discriptions {
-  font-family: 'Oswald', sans-serif;
+font-family: 'Oswald', sans-serif;
+line-height: 20px;
 }
 
+.html-text {
+  color: red;
+  font-family:'Source Code Pro', monospace;
+}
+
+.css-text{
+color: blue;
+font-family:'Source Code Pro', monospace;
+}
+
+.bs-text{
+  color: purple;
+  font-family:'Source Code Pro', monospace;
+}
 
 .overlay {
   position: absolute;
@@ -302,6 +315,8 @@ letter-spacing: 1px;
   transition: .5s ease;
   background-color: rgb(243, 173, 46);
 }
+
+
 
 
  .overlay-effect:hover .overlay {
@@ -331,17 +346,24 @@ letter-spacing: 1px;
   border-bottom: 1px solid #000;
 }
 
-/* overlay effect ends*/
 
+
+@media (max-width: 992px) {
+  .overlay {
+    opacity: 1;
+  }
+
+}
+
+
+/* overlay effect ends*/
+/*portfolio ends*/
 
 /*about section begins*/
 
 .about-section {
-
   padding-top: 200px;
   padding-bottom: 200px;
-
-
 
 }
 
@@ -375,40 +397,40 @@ letter-spacing: 1px;
 }
 
 
-
+/*faded text applies to work and about text on mobile text*/
 .about-text {
   padding-bottom: 20px;
   padding-left: 0px;
 }
+
 .about-text h1 {
-  /*color: #eabb87;*/
-  color: rgb(0, 139, 139);
-  /* color: rgb(187, 210, 225); */
+  color: #05b3b3;
   line-height: 8px;
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   letter-spacing: 1px;
 }
 
-.about-text-one {
-  opacity: .7;
+.text-one {
+  opacity: .8;
 }
 
 
-.about-text-two {
+.text-two {
+  opacity: .6;
+}
+
+.text-three {
   opacity: .4;
 }
 
-.about-text-three {
-  opacity: .2;
-}
-
-.bio-text h1 {
+.bio-text h2 {
     /* font-family: 'oswel'; */
     /* font-family: 'Oswald', sans-serif; */
     letter-spacing: 0px;
-    font-family: 'Source Code Pro', monospace;
-    color: darkcyan;
+    font-family: 'Oswald', sans-serif;
+
+    color: rgba(243, 255, 255, 0.91);;
   }
 
 .bio-text {
@@ -459,7 +481,6 @@ letter-spacing: 1px;
 
 
 
-
 .contact-text {
   width: 600px;
   height: 500px;
@@ -473,7 +494,7 @@ letter-spacing: 1px;
 .contact-text h1 {
   font-size: 75px;
   font-family: 'Oswald', sans-serif;
-  color: rgba(255, 255, 255, 0.69);
+  color:rgba(243, 255, 255, 0.91);;
 
 }
 
@@ -497,7 +518,7 @@ height: 500px;
 }
 
 
-@media (max-width: 771px) {
+@media (max-width: 767px) {
   .contact-text {
     border: none;
   }
@@ -508,4 +529,75 @@ height: 500px;
 
 
   }
+}
+
+/*display none on phone*/
+/*mobile portfolio section*/
+
+@media (min-width: 767px) {
+  .portfolio-mobile {
+    display:  none;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+  .site-holder {
+    display:  none;
+  }
+  .about-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+.work-three-text {
+  padding-bottom: 20px;
+  padding-left: 0px;
+}
+
+.work-three-text h1 {
+  color: #e8b64b;
+  line-height: 8px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.thumbnail {
+  height: 100px;
+  overflow: hidden;
+}
+
+.my-work-text {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  padding-left: 0px;
+  font-size: 18px;
+}
+
+/* my skills begins*/
+
+.skills-text h1 {
+  color: #e8b64b;
+  line-height: 8px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.skills-text {
+  padding-bottom: 20px;
+  padding-left: 0px;
+}
+
+.logos--bg{
+  background-image:url(../img/logos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+
+  height: 200px;
+
 }
